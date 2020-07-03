@@ -46,6 +46,7 @@
 
 </properties>
 
+<!-- 중앙저장소가 아닌곳에서 데이터베이스를 받고자 할때 쓰는 용도 -->
 <repositories>
 	<repository>
 		<id>oracle</id>
@@ -56,7 +57,14 @@
 
 
 <dependencies>
-<!-- 오라클 -->
+<!-- MyBatis Log 기록 라이브러리 -->
+<dependency>
+    <groupId>org.bgee.log4jdbc-log4j2</groupId>
+    <artifactId>log4jdbc-log4j2-jdbc4</artifactId>
+    <version>1.16</version>
+</dependency>
+
+<!-- 오라클 의존성-->
 <dependency>
 	<groupId>com.oracle</groupId>
 	<artifactId>ojdbc7</artifactId>
